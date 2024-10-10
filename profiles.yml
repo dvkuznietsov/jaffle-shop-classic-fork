@@ -1,0 +1,11 @@
+jaffle_shop:
+  target: dev
+  outputs:
+    dev:
+      # See: https://docs.databricks.com/ja/partners/prep/dbt.html
+      type: databricks
+      schema: default
+      host: e2-dogfood.staging.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/dd43ee29fedd958d
+      auth_type: oauth
+      threads: 1
